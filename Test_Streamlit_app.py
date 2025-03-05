@@ -51,7 +51,7 @@ if uploaded_file is not None:
                 return row["DepartureFlightNumber"]
             elif row["ServiceType"] == "Arrival" and row["ArrivalFlightNumber"] not in ["NA", "", None]:
                 return row["ArrivalFlightNumber"]
-            elif row["ServiceType"] == "Transit"]:
+            elif row["ServiceType"] == "Transit":
                 return f"{row['ArrivalFlightNumber']} / {row['TransitFlightNumber']}"
             return ""
 
