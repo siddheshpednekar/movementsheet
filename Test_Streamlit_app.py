@@ -14,7 +14,7 @@ st.title("Movement Sheet Web App")
 uploaded_file = st.file_uploader("Choose an Excel file", type=["xlsx", "xls"])
 
 if uploaded_file is not None:
-    package_file_path = r"C:\Users\siddh\Downloads\Package File Movement sheet.xlsx"
+    package_file_path = r"Package File Movement sheet.xlsx"
 
     # Read the Excel file into a DataFrame
     df = pd.read_excel(uploaded_file)
